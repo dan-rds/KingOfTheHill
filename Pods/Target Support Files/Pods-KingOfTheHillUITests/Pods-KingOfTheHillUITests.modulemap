@@ -1,0 +1,6 @@
+framework module Pods_KingOfTheHillUITests {
+  umbrella header "Pods-KingOfTheHillUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
