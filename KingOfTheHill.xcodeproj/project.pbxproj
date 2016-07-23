@@ -16,6 +16,10 @@
 		65A3C8561D43D05100E3DB78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A3C8541D43D05100E3DB78 /* LaunchScreen.storyboard */; };
 		65A3C8611D43D05100E3DB78 /* KingOfTheHillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C8601D43D05100E3DB78 /* KingOfTheHillTests.swift */; };
 		65A3C86C1D43D05100E3DB78 /* KingOfTheHillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C86B1D43D05100E3DB78 /* KingOfTheHillUITests.swift */; };
+		65C90C5F1D43F46D007D6B73 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C90C5D1D43F46D007D6B73 /* ENSideMenu.swift */; };
+		65C90C601D43F46D007D6B73 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C90C5E1D43F46D007D6B73 /* ENSideMenuNavigationController.swift */; };
+		65C90C621D43F748007D6B73 /* SideNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C90C611D43F748007D6B73 /* SideNavigationViewController.swift */; };
+		65C90C641D43F895007D6B73 /* menuTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C90C631D43F895007D6B73 /* menuTableTableViewController.swift */; };
 		E465B5642F8DE31537FC9123 /* Pods_KingOfTheHillTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D0496D31A01D37D8D8C949 /* Pods_KingOfTheHillTests.framework */; };
 		F929AE518AD0FABE3BD23D7D /* Pods_KingOfTheHillUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C3CC14B8CB63A4C656F782 /* Pods_KingOfTheHillUITests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +58,10 @@
 		65A3C8671D43D05100E3DB78 /* KingOfTheHillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingOfTheHillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3C86B1D43D05100E3DB78 /* KingOfTheHillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingOfTheHillUITests.swift; sourceTree = "<group>"; };
 		65A3C86D1D43D05100E3DB78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C90C5D1D43F46D007D6B73 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		65C90C5E1D43F46D007D6B73 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		65C90C611D43F748007D6B73 /* SideNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideNavigationViewController.swift; sourceTree = "<group>"; };
+		65C90C631D43F895007D6B73 /* menuTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuTableTableViewController.swift; sourceTree = "<group>"; };
 		71B40B824757693C34B20735 /* Pods-KingOfTheHill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingOfTheHill.release.xcconfig"; path = "Pods/Target Support Files/Pods-KingOfTheHill/Pods-KingOfTheHill.release.xcconfig"; sourceTree = "<group>"; };
 		8F5896F96C2EF476A5E712F2 /* Pods_KingOfTheHill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingOfTheHill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D0496D31A01D37D8D8C949 /* Pods_KingOfTheHillTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingOfTheHillTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,11 +126,15 @@
 			children = (
 				65A3C84B1D43D05100E3DB78 /* AppDelegate.swift */,
 				65A3C84D1D43D05100E3DB78 /* ViewController.swift */,
+				65C90C611D43F748007D6B73 /* SideNavigationViewController.swift */,
 				65A3C84F1D43D05100E3DB78 /* Main.storyboard */,
+				65C90C631D43F895007D6B73 /* menuTableTableViewController.swift */,
 				65A3C8521D43D05100E3DB78 /* Assets.xcassets */,
 				65A3C8541D43D05100E3DB78 /* LaunchScreen.storyboard */,
 				65A3C8571D43D05100E3DB78 /* Info.plist */,
 				346DC7271D43E7E2000B28F8 /* GoogleService-Info.plist */,
+				65C90C5D1D43F46D007D6B73 /* ENSideMenu.swift */,
+				65C90C5E1D43F46D007D6B73 /* ENSideMenuNavigationController.swift */,
 			);
 			path = KingOfTheHill;
 			sourceTree = "<group>";
@@ -452,6 +464,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C90C621D43F748007D6B73 /* SideNavigationViewController.swift in Sources */,
+				65C90C641D43F895007D6B73 /* menuTableTableViewController.swift in Sources */,
+				65C90C601D43F46D007D6B73 /* ENSideMenuNavigationController.swift in Sources */,
+				65C90C5F1D43F46D007D6B73 /* ENSideMenu.swift in Sources */,
 				65A3C84E1D43D05100E3DB78 /* ViewController.swift in Sources */,
 				65A3C84C1D43D05100E3DB78 /* AppDelegate.swift in Sources */,
 			);
