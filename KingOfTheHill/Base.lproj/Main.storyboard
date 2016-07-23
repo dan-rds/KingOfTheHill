@@ -100,7 +100,7 @@
         <!--View Controller-->
         <scene sceneID="HyG-Rs-VE9">
             <objects>
-                <viewController id="k0j-Pa-64L" sceneMemberID="viewController">
+                <viewController id="k0j-Pa-64L" customClass="ViewController" customModule="KingOfTheHill" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aMM-YD-KmE"/>
                         <viewControllerLayoutGuide type="bottom" id="bhb-dn-bOg"/>
@@ -121,7 +121,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="e6G-p6-nfB"/>
+                    <navigationItem key="navigationItem" id="e6G-p6-nfB">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="vnZ-v5-ERw">
+                            <connections>
+                                <action selector="MenuPressed:" destination="k0j-Pa-64L" id="xZE-SM-fvS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ue4-SB-WgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

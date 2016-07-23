@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
  
+    @IBAction func MenuPressed(_ sender: UIBarButtonItem) {
+        toggleSideMenuView()
+
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +25,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
 
