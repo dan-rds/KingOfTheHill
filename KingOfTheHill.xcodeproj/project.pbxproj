@@ -193,6 +193,8 @@
 				TargetAttributes = {
 					65A3C8471D43D05100E3DB78 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 94R496AK9Q;
+						DevelopmentTeamName = "Jonathan Richards";
 						ProvisioningStyle = Automatic;
 					};
 					65A3C85B1D43D05100E3DB78 = {
@@ -407,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KingOfTheHill/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MoversandShakers.mobi.KingOfTheHill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -419,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KingOfTheHill/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MoversandShakers.mobi.KingOfTheHill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +499,7 @@
 				65A3C8721D43D05100E3DB78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65A3C8731D43D05100E3DB78 /* Build configuration list for PBXNativeTarget "KingOfTheHillTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				65A3C8751D43D05100E3DB78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65A3C8761D43D05100E3DB78 /* Build configuration list for PBXNativeTarget "KingOfTheHillUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				65A3C8781D43D05100E3DB78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
