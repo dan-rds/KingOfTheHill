@@ -33,7 +33,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         mapView.setRegion(region, animated: true)
-//Adding pins (back end)
+//Adding pins (with code)
         var annotation = MKPointAnnotation()
         
         annotation.coordinate = location
