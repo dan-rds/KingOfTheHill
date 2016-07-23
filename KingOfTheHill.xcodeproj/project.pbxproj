@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		346DC7281D43E7E2000B28F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 346DC7271D43E7E2000B28F8 /* GoogleService-Info.plist */; };
+		346DC73B1D4426A6000B28F8 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC7321D4426A6000B28F8 /* GeoFire.m */; };
+		346DC73C1D4426A6000B28F8 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC7341D4426A6000B28F8 /* GFBase32Utils.m */; };
+		346DC73D1D4426A6000B28F8 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC7361D4426A6000B28F8 /* GFGeoHash.m */; };
+		346DC73E1D4426A6000B28F8 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC7381D4426A6000B28F8 /* GFGeoHashQuery.m */; };
+		346DC73F1D4426A6000B28F8 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC73A1D4426A6000B28F8 /* GFQuery.m */; };
 		5AA97B1A946443783485C392 /* Pods_KingOfTheHill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5896F96C2EF476A5E712F2 /* Pods_KingOfTheHill.framework */; };
 		65A3C84C1D43D05100E3DB78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C84B1D43D05100E3DB78 /* AppDelegate.swift */; };
 		65A3C84E1D43D05100E3DB78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C84D1D43D05100E3DB78 /* ViewController.swift */; };
@@ -47,6 +52,20 @@
 /* Begin PBXFileReference section */
 		22575ACDFE02C7CC6089608F /* Pods-KingOfTheHill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingOfTheHill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KingOfTheHill/Pods-KingOfTheHill.debug.xcconfig"; sourceTree = "<group>"; };
 		346DC7271D43E7E2000B28F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		346DC72B1D4426A6000B28F8 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		346DC72C1D4426A6000B28F8 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		346DC72D1D4426A6000B28F8 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		346DC72E1D4426A6000B28F8 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		346DC7311D4426A6000B28F8 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		346DC7321D4426A6000B28F8 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		346DC7331D4426A6000B28F8 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		346DC7341D4426A6000B28F8 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		346DC7351D4426A6000B28F8 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		346DC7361D4426A6000B28F8 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		346DC7371D4426A6000B28F8 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		346DC7381D4426A6000B28F8 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		346DC7391D4426A6000B28F8 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		346DC73A1D4426A6000B28F8 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		50C3CC14B8CB63A4C656F782 /* Pods_KingOfTheHillUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingOfTheHillUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3C8481D43D05100E3DB78 /* KingOfTheHill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingOfTheHill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3C84B1D43D05100E3DB78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,9 +125,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		346DC7291D4426A6000B28F8 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				346DC72A1D4426A6000B28F8 /* API */,
+				346DC7301D4426A6000B28F8 /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		346DC72A1D4426A6000B28F8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				346DC72B1D4426A6000B28F8 /* GeoFire.h */,
+				346DC72C1D4426A6000B28F8 /* GFCircleQuery.h */,
+				346DC72D1D4426A6000B28F8 /* GFQuery.h */,
+				346DC72E1D4426A6000B28F8 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		346DC7301D4426A6000B28F8 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				346DC7311D4426A6000B28F8 /* GeoFire+Private.h */,
+				346DC7321D4426A6000B28F8 /* GeoFire.m */,
+				346DC7331D4426A6000B28F8 /* GFBase32Utils.h */,
+				346DC7341D4426A6000B28F8 /* GFBase32Utils.m */,
+				346DC7351D4426A6000B28F8 /* GFGeoHash.h */,
+				346DC7361D4426A6000B28F8 /* GFGeoHash.m */,
+				346DC7371D4426A6000B28F8 /* GFGeoHashQuery.h */,
+				346DC7381D4426A6000B28F8 /* GFGeoHashQuery.m */,
+				346DC7391D4426A6000B28F8 /* GFQuery+Private.h */,
+				346DC73A1D4426A6000B28F8 /* GFQuery.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
 		65A3C83F1D43D05100E3DB78 = {
 			isa = PBXGroup;
 			children = (
+				346DC7291D4426A6000B28F8 /* GeoFire */,
 				65A3C84A1D43D05100E3DB78 /* KingOfTheHill */,
 				65A3C85F1D43D05100E3DB78 /* KingOfTheHillTests */,
 				65A3C86A1D43D05100E3DB78 /* KingOfTheHillUITests */,
@@ -479,9 +536,14 @@
 				65C90C601D43F46D007D6B73 /* ENSideMenuNavigationController.swift in Sources */,
 				65C90C5F1D43F46D007D6B73 /* ENSideMenu.swift in Sources */,
 				65C90C661D4402D1007D6B73 /* SecondViewController.swift in Sources */,
+				346DC73E1D4426A6000B28F8 /* GFGeoHashQuery.m in Sources */,
 				65A3C84E1D43D05100E3DB78 /* ViewController.swift in Sources */,
+				346DC73C1D4426A6000B28F8 /* GFBase32Utils.m in Sources */,
+				346DC73D1D4426A6000B28F8 /* GFGeoHash.m in Sources */,
 				65C90C681D440C57007D6B73 /* ThirdViewController.swift in Sources */,
 				65A3C84C1D43D05100E3DB78 /* AppDelegate.swift in Sources */,
+				346DC73B1D4426A6000B28F8 /* GeoFire.m in Sources */,
+				346DC73F1D4426A6000B28F8 /* GFQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +690,23 @@
 			baseConfigurationReference = 22575ACDFE02C7CC6089608F /* Pods-KingOfTheHill.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleParsingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					GeoFire/API,
+				);
 				INFOPLIST_FILE = KingOfTheHill/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -642,6 +721,23 @@
 			baseConfigurationReference = 71B40B824757693C34B20735 /* Pods-KingOfTheHill.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleParsingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					GeoFire/API,
+				);
 				INFOPLIST_FILE = KingOfTheHill/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
