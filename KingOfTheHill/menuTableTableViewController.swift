@@ -19,5 +19,24 @@ class menuTableTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var destinationVC: UIViewController!
+        
+        if indexPath.row == 1 {
+            destinationVC = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController}
+        
+        else if indexPath.row == 2 {
+            destinationVC = storyboard.instantiateViewController(withIdentifier: "ThirdViewController") as! ThirdViewController}
+        
+            
+        else {destinationVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController}
+        
+        
+        sideMenuController()?.setContentViewController(destinationVC)
+    }
+    
    }
