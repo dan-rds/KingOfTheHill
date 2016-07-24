@@ -8,13 +8,23 @@
 
 import UIKit
 import MapKit
+
 import CoreLocation
 
+import Firebase
+import FirebaseDatabase
+import CoreLocation
 
 public class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
- 
+
+
+
+
+    
+
     @IBOutlet weak var mapView: MKMapView!
     
+    let manager = CLLocationManager()
     
     @IBAction func MenuPressed(_ sender: UIBarButtonItem) {
         toggleSideMenuView()
@@ -28,9 +38,9 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         //Core Location
         
         
-        let manager = CLLocationManager()
         
-        manager.delegate? = self
+        
+       manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestAlwaysAuthorization()
         manager.startUpdatingLocation()
@@ -48,6 +58,7 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         mapView.setRegion(region, animated: true)
+
 //Adding pins (with code)
         let annotation = MKPointAnnotation()
         
@@ -81,9 +92,13 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         
         mapView.addAnnotation(newAnnotation)
     }
-    func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
+    
+    
+    //func locationManager(_ manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
         
-        let userLocation:CLLocation = locations[0] as! CLLocation
+        let userLocation:CLLocation = locations[0]
         
         let latitude:CLLocationDegrees = userLocation.coordinate.latitude
         
@@ -103,17 +118,56 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         
     }
     
-    func locationManager(manager:CLLocationManager, didFailWithError error:NSError)
+    public func locationManager(_ manager:CLLocationManager, didFailWithError error:NSError)
     {
         print(error)
     }
     
 
-    override public func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+   // override func didReceiveMemoryWarning() {
+    //    super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    //}
+    
+    func setupEvents(lat: Double, lon: Double) {
+        let geofireRef = FIRDatabase.database().reference()
+        let geoFire = GeoFire(firebaseRef: geofireRef)
+        
+        
+        if let circleQuery = geoFire?.query(at: CLLocation(latitude: lat, longitude: lon), withRadius: 10.0) {
+
+            let queryHandle = circleQuery.observe(.keyEntered, with: { (key, location) in
+                print("key = \(key) location = \(location)")
+            })
+            print("handle = \(queryHandle)")
+        } else {
+            print("circle query is nil")
+        }
+
+ 
+    }
+    
+    func storeLoc(name: String, lat: Double, lon: Double) {
+        let geofireRef = FIRDatabase.database().reference()
+        let geoFire = GeoFire(firebaseRef: geofireRef)
+
+        geoFire?.setLocation(CLLocation(latitude: lat, longitude: lon), forKey: name)
+    }
+    
+    func getLoc(name: String) {
+        
+        let geofireRef = FIRDatabase.database().reference()
+        let geoFire = GeoFire(firebaseRef: geofireRef)
+
+        geoFire?.getLocationForKey(name, withCallback: { (location, error) in
+            if (error != nil) {
+                print("An error occurred getting the location: \(error?.localizedDescription)")
+            } else if (location != nil) {
+                print("Location for \(name) is [\(location?.coordinate.latitude), \(location?.coordinate.longitude)]")
+            } else {
+                print("GeoFire does not contain a location for \"firebase-hq\"")
+            }
+        })
     }
 
-    
 }
-
