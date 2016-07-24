@@ -71,7 +71,7 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
 //User adding pins
         
         let UILPR = UILongPressGestureRecognizer(target: self, action: #selector(actionx))
-        UILPR.minimumPressDuration = 0.5 
+        UILPR.minimumPressDuration = 1.0
         
         mapView.addGestureRecognizer(UILPR)
         
