@@ -67,6 +67,7 @@
 		346DC7381D4426A6000B28F8 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
 		346DC7391D4426A6000B28F8 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		346DC73A1D4426A6000B28F8 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		346DC7401D4434FD000B28F8 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		50C3CC14B8CB63A4C656F782 /* Pods_KingOfTheHillUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingOfTheHillUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3C8481D43D05100E3DB78 /* KingOfTheHill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingOfTheHill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3C84B1D43D05100E3DB78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +205,7 @@
 				346DC7271D43E7E2000B28F8 /* GoogleService-Info.plist */,
 				65C90C5D1D43F46D007D6B73 /* ENSideMenu.swift */,
 				65C90C5E1D43F46D007D6B73 /* ENSideMenuNavigationController.swift */,
+				346DC7401D4434FD000B28F8 /* Bridging-Header.h */,
 			);
 			path = KingOfTheHill;
 			sourceTree = "<group>";
@@ -716,6 +718,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MoversandShakers.mobi.KingOfTheHill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KingOfTheHill/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -747,6 +750,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MoversandShakers.mobi.KingOfTheHill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KingOfTheHill/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
