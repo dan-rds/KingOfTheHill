@@ -116,6 +116,10 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         
             mapView.setRegion(region, animated: true)
         
+        print("\(userLocation)")
+        
+        setupEvents(lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude);
+        storeLoc(name: "Jon", lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude)
     }
     
     public func locationManager(_ manager:CLLocationManager, didFailWithError error:NSError)
