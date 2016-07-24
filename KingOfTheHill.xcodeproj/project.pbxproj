@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34157DFE1D446B51007AB3C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34157DFD1D446B51007AB3C4 /* LoginViewController.swift */; };
 		346DC7281D43E7E2000B28F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 346DC7271D43E7E2000B28F8 /* GoogleService-Info.plist */; };
 		346DC73B1D4426A6000B28F8 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC7321D4426A6000B28F8 /* GeoFire.m */; };
 		346DC73C1D4426A6000B28F8 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC7341D4426A6000B28F8 /* GFBase32Utils.m */; };
 		346DC73D1D4426A6000B28F8 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC7361D4426A6000B28F8 /* GFGeoHash.m */; };
 		346DC73E1D4426A6000B28F8 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC7381D4426A6000B28F8 /* GFGeoHashQuery.m */; };
 		346DC73F1D4426A6000B28F8 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC73A1D4426A6000B28F8 /* GFQuery.m */; };
+		34B042721D44684100364364 /* KING.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B042711D44684100364364 /* KING.png */; };
 		5AA97B1A946443783485C392 /* Pods_KingOfTheHill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5896F96C2EF476A5E712F2 /* Pods_KingOfTheHill.framework */; };
 		658973971D44770A0036143B /* menu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 658973961D44770A0036143B /* menu2.png */; };
 		65A3C84C1D43D05100E3DB78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C84B1D43D05100E3DB78 /* AppDelegate.swift */; };
@@ -53,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		22575ACDFE02C7CC6089608F /* Pods-KingOfTheHill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingOfTheHill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KingOfTheHill/Pods-KingOfTheHill.debug.xcconfig"; sourceTree = "<group>"; };
+		34157DFD1D446B51007AB3C4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		346DC7271D43E7E2000B28F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		346DC72B1D4426A6000B28F8 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
 		346DC72C1D4426A6000B28F8 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		346DC7391D4426A6000B28F8 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		346DC73A1D4426A6000B28F8 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		346DC7401D4434FD000B28F8 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		34B042711D44684100364364 /* KING.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KING.png; sourceTree = "<group>"; };
 		50C3CC14B8CB63A4C656F782 /* Pods_KingOfTheHillUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingOfTheHillUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658973961D44770A0036143B /* menu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu2.png; sourceTree = "<group>"; };
 		65A3C8481D43D05100E3DB78 /* KingOfTheHill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingOfTheHill.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,9 +172,18 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		34B042701D44683100364364 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				34B042711D44684100364364 /* KING.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		65A3C83F1D43D05100E3DB78 = {
 			isa = PBXGroup;
 			children = (
+				34B042701D44683100364364 /* Images */,
 				346DC7291D4426A6000B28F8 /* GeoFire */,
 				65A3C84A1D43D05100E3DB78 /* KingOfTheHill */,
 				65A3C85F1D43D05100E3DB78 /* KingOfTheHillTests */,
@@ -209,6 +222,7 @@
 				65C90C5D1D43F46D007D6B73 /* ENSideMenu.swift */,
 				65C90C5E1D43F46D007D6B73 /* ENSideMenuNavigationController.swift */,
 				346DC7401D4434FD000B28F8 /* Bridging-Header.h */,
+				34157DFD1D446B51007AB3C4 /* LoginViewController.swift */,
 			);
 			path = KingOfTheHill;
 			sourceTree = "<group>";
@@ -377,6 +391,7 @@
 				65A3C8561D43D05100E3DB78 /* LaunchScreen.storyboard in Resources */,
 				658973971D44770A0036143B /* menu2.png in Resources */,
 				346DC7281D43E7E2000B28F8 /* GoogleService-Info.plist in Resources */,
+				34B042721D44684100364364 /* KING.png in Resources */,
 				65A3C8531D43D05100E3DB78 /* Assets.xcassets in Resources */,
 				65A3C8511D43D05100E3DB78 /* Main.storyboard in Resources */,
 			);
@@ -541,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34157DFE1D446B51007AB3C4 /* LoginViewController.swift in Sources */,
 				65C90C621D43F748007D6B73 /* SideNavigationViewController.swift in Sources */,
 				65C90C641D43F895007D6B73 /* menuTableTableViewController.swift in Sources */,
 				65C90C601D43F46D007D6B73 /* ENSideMenuNavigationController.swift in Sources */,

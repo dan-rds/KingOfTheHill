@@ -18,9 +18,7 @@ import CoreLocation
 public class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
 
-
-
-    
+    public var userName: String!
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -35,12 +33,11 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let appDelegate = UIApplication.shared().delegate as! AppDelegate
+        self.userName = appDelegate.userName
+        
         //Core Location
-        
-        
-        
-        
-       manager.delegate = self
+        manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestAlwaysAuthorization()
         manager.startUpdatingLocation()
@@ -117,9 +114,11 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
             mapView.setRegion(region, animated: true)
         
         print("\(userLocation)")
+        print("\(self.userName)")
         
         setupEvents(lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude);
-        storeLoc(name: "daniel", lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude)
+        storeLoc(name: self.userName, lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude)
+
     }
     
     public func locationManager(_ manager:CLLocationManager, didFailWithError error:NSError)
@@ -138,7 +137,7 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         let geoFire = GeoFire(firebaseRef: geofireRef)
         
         
-        if let circleQuery = geoFire?.query(at: CLLocation(latitude: lat, longitude: lon), withRadius: 10.0) {
+        if let circleQuery = geoFire?.query(at: CLLocation(latitude: lat, longitude: lon), withRadius: 23.00) {
 
             let queryHandle = circleQuery.observe(.keyEntered, with: { (key, location) in
                 print("key = \(key) location = \(location)")

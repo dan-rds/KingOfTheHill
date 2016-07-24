@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="org-IC-Iwx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WHp-0V-SbO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
@@ -45,11 +45,13 @@
                                         <rect key="frame" x="0.0" y="110" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DOX-G4-kmj" id="tBx-5c-Kei">
-                                            <frame key="frameInset" width="375" height="108"/>
+
+                                            <frame key="frameInset" width="375" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uQX-Hk-Pji">
-                                                    <frame key="frameInset" minX="138" width="222" height="108"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uQX-Hk-Pji">
+                                                    <frame key="frameInset" minX="15" width="345" height="40"/>
+
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,12 +69,14 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="dxN-yU-c7y" imageView="hIb-Nj-Rgt" rowHeight="109" style="IBUITableViewCellStyleDefault" id="uxr-KW-1is">
                                         <rect key="frame" x="0.0" y="219" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uxr-KW-1is" id="VCa-2R-gDY">
-                                            <frame key="frameInset" width="375" height="108"/>
+
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="leW-mP-Szf" id="X4X-ij-kEM">
+                                            <frame key="frameInset" width="375" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dxN-yU-c7y">
-                                                    <frame key="frameInset" minX="138" width="222" height="108"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fxg-zM-EKU">
+                                                    <frame key="frameInset" minX="15" width="345" height="39"/>
+
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -98,6 +102,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeO-Yx-5gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1322.4000000000001" y="-92.203898050974516"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="eI1-Ty-Upu">
+            <objects>
+                <viewController storyboardIdentifier="loginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WHp-0V-SbO" customClass="LoginViewController" customModule="KingOfTheHill" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="raj-wz-YQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="tS0-LZ-mFi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="asR-fG-qNF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KING.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hhf-tr-SZI"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-Vs-u7q">
+                                <frame key="frameInset" minX="19" minY="222" width="95" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="908-yS-SJB">
+                                <frame key="frameInset" minX="121" minY="226" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWi-SR-OIF">
+                                <frame key="frameInset" minX="241" minY="264" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="WHp-0V-SbO" eventType="touchUpInside" id="GY1-vr-2vt"/>
+                                    <segue destination="org-IC-Iwx" kind="show" id="c35-5d-ZGc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hhf-tr-SZI" secondAttribute="trailing" id="O0m-Tz-dIo"/>
+                            <constraint firstItem="Hhf-tr-SZI" firstAttribute="top" secondItem="asR-fG-qNF" secondAttribute="top" id="ZAD-zs-Bts"/>
+                            <constraint firstItem="Hhf-tr-SZI" firstAttribute="bottom" secondItem="tS0-LZ-mFi" secondAttribute="top" id="cQM-2M-jXx"/>
+                            <constraint firstItem="Hhf-tr-SZI" firstAttribute="leading" secondItem="asR-fG-qNF" secondAttribute="leading" id="tCv-RD-n6o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="908-yS-SJB" id="xrd-cB-Iks"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ilz-cr-1Cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1322" y="552"/>
         </scene>
         <!--Side Navigation View Controller-->
         <scene sceneID="6sz-uy-Oea">
@@ -274,9 +331,11 @@
         </scene>
     </scenes>
     <resources>
+
         <image name="iw.png" width="150" height="150"/>
         <image name="menu2.png" width="40" height="40"/>
         <image name="personw" width="150" height="150"/>
         <image name="pinw" width="150" height="150"/>
+        <image name="KING.png" width="640" height="1136"/>
     </resources>
 </document>
