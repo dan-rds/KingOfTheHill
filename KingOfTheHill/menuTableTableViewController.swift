@@ -13,7 +13,7 @@ class menuTableTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.contentInset = UIEdgeInsetsMake(70, 0, 0, 0)    }
+        tableView.contentInset = UIEdgeInsetsMake(60, 0, 0, 0)    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

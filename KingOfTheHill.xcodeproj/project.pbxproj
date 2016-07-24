@@ -14,6 +14,7 @@
 		346DC73E1D4426A6000B28F8 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC7381D4426A6000B28F8 /* GFGeoHashQuery.m */; };
 		346DC73F1D4426A6000B28F8 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 346DC73A1D4426A6000B28F8 /* GFQuery.m */; };
 		5AA97B1A946443783485C392 /* Pods_KingOfTheHill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5896F96C2EF476A5E712F2 /* Pods_KingOfTheHill.framework */; };
+		658973971D44770A0036143B /* menu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 658973961D44770A0036143B /* menu2.png */; };
 		65A3C84C1D43D05100E3DB78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C84B1D43D05100E3DB78 /* AppDelegate.swift */; };
 		65A3C84E1D43D05100E3DB78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3C84D1D43D05100E3DB78 /* ViewController.swift */; };
 		65A3C8511D43D05100E3DB78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A3C84F1D43D05100E3DB78 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		346DC73A1D4426A6000B28F8 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		346DC7401D4434FD000B28F8 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		50C3CC14B8CB63A4C656F782 /* Pods_KingOfTheHillUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingOfTheHillUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		658973961D44770A0036143B /* menu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu2.png; sourceTree = "<group>"; };
 		65A3C8481D43D05100E3DB78 /* KingOfTheHill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingOfTheHill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3C84B1D43D05100E3DB78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A3C84D1D43D05100E3DB78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				65C90C651D4402D1007D6B73 /* SecondViewController.swift */,
 				65C90C631D43F895007D6B73 /* menuTableTableViewController.swift */,
 				65A3C8521D43D05100E3DB78 /* Assets.xcassets */,
+				658973961D44770A0036143B /* menu2.png */,
 				65A3C8541D43D05100E3DB78 /* LaunchScreen.storyboard */,
 				65A3C8571D43D05100E3DB78 /* Info.plist */,
 				346DC7271D43E7E2000B28F8 /* GoogleService-Info.plist */,
@@ -372,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A3C8561D43D05100E3DB78 /* LaunchScreen.storyboard in Resources */,
+				658973971D44770A0036143B /* menu2.png in Resources */,
 				346DC7281D43E7E2000B28F8 /* GoogleService-Info.plist in Resources */,
 				65A3C8531D43D05100E3DB78 /* Assets.xcassets in Resources */,
 				65A3C8511D43D05100E3DB78 /* Main.storyboard in Resources */,

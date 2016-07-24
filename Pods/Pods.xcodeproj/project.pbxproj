@@ -35,6 +35,24 @@
 		4FFDA433B561FE32E3E04E0E16815A8D /* Pods-KingOfTheHillTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KingOfTheHillTests-dummy.m"; sourceTree = "<group>"; };
 		5EBF8852569257568519B631081056B0 /* Pods_KingOfTheHill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingOfTheHill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		615C0F14457BEF9FB1B14CBE837A0257 /* Pods-KingOfTheHillTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KingOfTheHillTests-frameworks.sh"; sourceTree = "<group>"; };
+		657464001D446CAB00ADB109 /* iw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iw.png; path = ../../../Desktop/iw.png; sourceTree = "<group>"; };
+		657464011D446CAB00ADB109 /* IWHITE.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = IWHITE.psd; path = ../../../Desktop/IWHITE.psd; sourceTree = "<group>"; };
+		657464021D446CAB00ADB109 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../../Desktop/menu.png; sourceTree = "<group>"; };
+		657464031D446CAB00ADB109 /* personw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = personw.png; path = ../../../Desktop/personw.png; sourceTree = "<group>"; };
+		657464041D446CAB00ADB109 /* pinw-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pinw-1.png"; path = "../../../Desktop/pinw-1.png"; sourceTree = "<group>"; };
+		657464051D446CAB00ADB109 /* pinw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinw.png; path = ../../../Desktop/pinw.png; sourceTree = "<group>"; };
+		657464061D446CC200ADB109 /* iw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iw.png; path = ../../../Desktop/iw.png; sourceTree = "<group>"; };
+		657464071D446CC200ADB109 /* IWHITE.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = IWHITE.psd; path = ../../../Desktop/IWHITE.psd; sourceTree = "<group>"; };
+		657464081D446CC200ADB109 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../../Desktop/menu.png; sourceTree = "<group>"; };
+		657464091D446CC200ADB109 /* personw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = personw.png; path = ../../../Desktop/personw.png; sourceTree = "<group>"; };
+		6574640A1D446CC200ADB109 /* pinw-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pinw-1.png"; path = "../../../Desktop/pinw-1.png"; sourceTree = "<group>"; };
+		6574640B1D446CC200ADB109 /* pinw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinw.png; path = ../../../Desktop/pinw.png; sourceTree = "<group>"; };
+		6574640C1D446CD500ADB109 /* iw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iw.png; sourceTree = "<group>"; };
+		6574640D1D446CD500ADB109 /* IWHITE.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = IWHITE.psd; sourceTree = "<group>"; };
+		6574640E1D446CD500ADB109 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		6574640F1D446CD500ADB109 /* personw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personw.png; sourceTree = "<group>"; };
+		657464101D446CD500ADB109 /* pinw-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinw-1.png"; sourceTree = "<group>"; };
+		657464111D446CD500ADB109 /* pinw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinw.png; sourceTree = "<group>"; };
 		662BF7D9F557AC9425935F9A211470AD /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		7CA33B289C0118063FA0991321F61FDC /* Pods-KingOfTheHillTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KingOfTheHillTests.release.xcconfig"; sourceTree = "<group>"; };
 		82DAC4A219A52D6EA45D0C721162BE96 /* Pods-KingOfTheHillTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KingOfTheHillTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -233,6 +251,24 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
+				6574640C1D446CD500ADB109 /* iw.png */,
+				6574640D1D446CD500ADB109 /* IWHITE.psd */,
+				6574640E1D446CD500ADB109 /* menu.png */,
+				6574640F1D446CD500ADB109 /* personw.png */,
+				657464101D446CD500ADB109 /* pinw-1.png */,
+				657464111D446CD500ADB109 /* pinw.png */,
+				657464061D446CC200ADB109 /* iw.png */,
+				657464071D446CC200ADB109 /* IWHITE.psd */,
+				657464081D446CC200ADB109 /* menu.png */,
+				657464091D446CC200ADB109 /* personw.png */,
+				6574640A1D446CC200ADB109 /* pinw-1.png */,
+				6574640B1D446CC200ADB109 /* pinw.png */,
+				657464001D446CAB00ADB109 /* iw.png */,
+				657464011D446CAB00ADB109 /* IWHITE.psd */,
+				657464021D446CAB00ADB109 /* menu.png */,
+				657464031D446CAB00ADB109 /* personw.png */,
+				657464041D446CAB00ADB109 /* pinw-1.png */,
+				657464051D446CAB00ADB109 /* pinw.png */,
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				DFAEE58E41FEB79E2A095B402D1F99FA /* Pods */,

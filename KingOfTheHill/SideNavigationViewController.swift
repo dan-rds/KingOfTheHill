@@ -16,7 +16,7 @@ class SideNavigationViewController: ENSideMenuNavigationController {
         let menu = storyboard?.instantiateViewController(withIdentifier: "menuTableTableViewController") as! menuTableTableViewController
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: menu, menuPosition: ENSideMenuPosition.left)
         
-        sideMenu?.menuWidth = 150
+        sideMenu?.menuWidth = 130
         
         view.bringSubview(toFront: navigationBar)
         // Do any additional setup after loading the view.

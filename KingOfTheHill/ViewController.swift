@@ -71,7 +71,7 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
 //User adding pins
         
         let UILPR = UILongPressGestureRecognizer(target: self, action: #selector(actionx))
-        UILPR.minimumPressDuration = 2.0
+        UILPR.minimumPressDuration = 0.5 
         
         mapView.addGestureRecognizer(UILPR)
         
@@ -92,6 +92,9 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         
         mapView.addAnnotation(newAnnotation)
     }
+    let latDelta:CLLocationDegrees = 0.01
+    
+    let lonDelta:CLLocationDegrees = 0.01
     
     
     //func locationManager(_ manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
@@ -104,9 +107,6 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         
         let longitude:CLLocationDegrees = userLocation.coordinate.longitude
         
-        let latDelta:CLLocationDegrees = 0.3
-        
-        let lonDelta:CLLocationDegrees = 0.3
         
         let span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
         
@@ -119,7 +119,7 @@ public class ViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         print("\(userLocation)")
         
         setupEvents(lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude);
-        storeLoc(name: "Jon", lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude)
+        storeLoc(name: "daniel", lat: userLocation.coordinate.latitude, lon: userLocation.coordinate.longitude)
     }
     
     public func locationManager(_ manager:CLLocationManager, didFailWithError error:NSError)
